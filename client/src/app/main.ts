@@ -10,6 +10,12 @@ import { HTTP_PROVIDERS } from '@angular/http';
 
 import { AppComponent }         from './app.component';
 import { appRouterProviders }   from './app.routes';
+import { enableProdMode } from '@angular/core';
+
+if (process.env.ENV === 'production') {
+    enableProdMode();
+}
+
 
 bootstrap(AppComponent, [
     appRouterProviders,
