@@ -8,3 +8,5 @@ import '@angular/router';
 
 // RxJS
 import 'rxjs';
+
+require('!!style!css!bootstrap/dist/css/bootstrap.css');

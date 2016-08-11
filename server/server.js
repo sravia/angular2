@@ -12,8 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use('/', require('./routes/index'));
-app.use('/api/users/', require('./routes/users'));
-app.use('/api/todo/', require('./routes/todo'));
+app.use('/api/account/', require('./routes/account'));
 app.use('/api/protected/', require('./routes/protected-routes'));
 
 var port = process.env.PORT || 3002;
